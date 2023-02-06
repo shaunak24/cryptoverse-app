@@ -35,7 +35,7 @@ const App = () => {
             style={{ color: 'white', textAlign: 'center' }}
           >
             Cryptoverse <br />
-            All rights reserved
+            All Rights Reserved
           </Typography.Title>
           <Space>
             <Link to="/">Home</Link>
