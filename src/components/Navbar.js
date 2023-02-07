@@ -1,12 +1,11 @@
 import React from 'react';
-import { Menu, Button, Avatar, Typography } from 'antd';
+import { Menu, Avatar, Typography } from 'antd';
 import { Link } from 'react-router-dom';
 import {
   HomeOutlined,
   MoneyCollectOutlined,
   BulbOutlined,
   FundOutlined,
-  MenuOutlined,
 } from '@ant-design/icons';
 import icon from '../images/cryptocurrency.png';
 
