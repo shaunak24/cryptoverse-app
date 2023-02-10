@@ -18,8 +18,6 @@ const News = ({ simplified }) => {
 
   if (isFetching) return 'Loading...';
 
-  console.log(cryptoNews);
-
   return (
     <Row gutter={[24, 24]}>
       {!simplified && (
