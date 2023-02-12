@@ -13,6 +13,7 @@ const News = ({ simplified }) => {
     'https://www.bing.com/th?id=OVFT.mpzuVZnv8dwIMRfQGPbOPC&pid=News';
 
   const [newsCategory, setNewsCategory] = useState('Cryptocurrency');
+  console.log(newsCategory);
   // after updating to bing API, pass in newsCategory to API for select to work
   const { data: cryptoNews, isFetching } = useGetCryptoNewsQuery(count);
   const { data: cryptoList } = useGetCryptosQuery(100);
