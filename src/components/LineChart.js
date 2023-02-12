@@ -33,8 +33,8 @@ const LineChart = ({ coinName, currentPrice, coinHistory }) => {
     date.setUTCSeconds(coinHistory?.data?.history[i].timestamp);
     timestamp.push(date.toLocaleDateString());
   }
-  console.log(price);
-  console.log(timestamp);
+  // console.log(price);
+  // console.log(timestamp);
 
   const data = {
     labels: timestamp,
