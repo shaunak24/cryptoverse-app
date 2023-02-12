@@ -19,6 +19,7 @@ import {
   useGetCryptoHistoryQuery,
 } from '../services/cryptoApi';
 import LineChart from './LineChart';
+import Loader from './Loader';
 
 const CryptoDetails = () => {
   const { Title, Text } = Typography;
@@ -33,7 +34,7 @@ const CryptoDetails = () => {
       timePeriod,
     });
 
-  if (isFetchingCryptoDetails || isFetchingCoinHistory) return 'Loading...';
+  if (isFetchingCryptoDetails || isFetchingCoinHistory) return <Loader />;
 
   const cryptoDetails = data?.data?.coin;
 

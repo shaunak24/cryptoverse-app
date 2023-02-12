@@ -4,12 +4,13 @@ import { Typography, Row, Col, Statistic } from 'antd';
 import { useGetCryptosQuery } from '../services/cryptoApi';
 import { Cryptocurrencies, News } from '../components';
 import { Link } from 'react-router-dom';
+import Loader from './Loader';
 
 const Homepage = () => {
   const { Title } = Typography;
   const { data, isFetching } = useGetCryptosQuery(10);
 
-  if (isFetching) return 'Loading...';
+  if (isFetching) return <Loader />;
   const {
     totalCoins,
     totalExchanges,
